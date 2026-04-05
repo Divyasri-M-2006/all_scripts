@@ -4,7 +4,7 @@ FROM nginx:latest
 COPY index.html /usr/share/nginx/html/index.html 
 EXPOSE 80
 
-#Deployment.yaml
+#deployment.yaml
 
 apiVersion: apps/v1
 kind: Deployment
@@ -80,3 +80,7 @@ kubectl apply -f deployment.yaml --validate=false
 } 
 } 
 }
+
+#if localhost didn't work
+Try by ending task of docker in task manager
+run this in terminal:  kubectl port-forward service/html-demo-service 30010:80
