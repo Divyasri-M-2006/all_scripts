@@ -22,5 +22,24 @@ pom.xml
 
 App.java
 
+package com.example;
+
+public class App {
+
+    public String calculateGrade(int marks) {
+        if (marks >= 90) return "A+";
+        else if (marks >= 80) return "A";
+        else if (marks >= 70) return "B";
+        else if (marks >= 60) return "C";
+        else return "F";
+    }
+
+    public static void main(String[] args) {
+        App app = new App();
+        int studentMarks = 85;
+        String grade = app.calculateGrade(studentMarks);
+        System.out.println("Student Grade: " + grade);
+    }
+}
 
 AppTest.java
