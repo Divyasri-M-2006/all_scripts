@@ -1,10 +1,10 @@
-Dockerfile
+#Dockerfile
 
 FROM nginx:latest 
 COPY index.html /usr/share/nginx/html/index.html 
 EXPOSE 80
 
-Deployment.yaml
+#Deployment.yaml
 
 apiVersion: apps/v1
 kind: Deployment
@@ -39,7 +39,7 @@ spec:
       targetPort: 80
       nodePort: 30010
 
-JENKINS ODA PIPELINE SCRIPT
+#JENKINS ODA PIPELINE SCRIPT
 
 pipeline { 
 agent any 
