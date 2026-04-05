@@ -43,3 +43,21 @@ public class App {
 }
 
 AppTest.java
+
+package com.example;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class AppTest {
+
+    @Test
+    public void testCalculateGrade() {
+        App app = new App();
+        assertEquals("A", app.calculateGrade(85));
+        assertEquals("A+", app.calculateGrade(95));
+        assertEquals("B", app.calculateGrade(75));
+        assertEquals("C", app.calculateGrade(65));
+        assertEquals("F", app.calculateGrade(50));
+    }
+}
