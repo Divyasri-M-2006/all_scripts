@@ -85,7 +85,7 @@ kubectl apply -f deployment.yaml --validate=false
 Try by ending task of docker in task manager
 run this in terminal:  kubectl port-forward service/html-demo-service 30010:80
 
-#index.html
+#index.html (portfolio)
 
 <!DOCTYPE html>
 <html lang="en">
